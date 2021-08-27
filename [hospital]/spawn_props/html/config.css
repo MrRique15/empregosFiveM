@@ -1,0 +1,265 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+#App{
+    border-radius: 20px;
+
+    left: 90%;
+    top: 50%;
+    transform: scale(1.0) translate(-90%, -50%);
+
+    opacity: 0.95;
+}
+
+#titleBox{
+    background-color: rgb(38, 38, 38);
+    padding: 6vh 4vh;
+}
+
+.title{
+    color: white;
+    font-size: 3.4vh;
+    font-weight: 300;
+}
+
+.subtitle{
+    color:#D2D2D2;
+    font-size: 2vh;
+    font-weight: 300;
+}
+
+#new{
+    background-color: #2d2d2d;
+	/* box-shadow: 1px 1px 5px 2px rgb(130, 130, 130); */
+    color: rgb(230, 230, 230);
+    
+    font-size: 4vh;
+    font-weight: bold;
+
+    padding: 0.2vh 1.2vh;
+    border-radius: 50%;
+}
+
+#folder{
+    /* background-color: #ffffff; */
+    border: 1px solid rgb(189, 189, 189);
+	/* box-shadow: 1px 1px 5px 2px rgb(130, 130, 130); */
+    color: rgb(230, 230, 230);
+    
+    width: 5vh;
+    height: 5vh;
+    font-weight: bold;
+
+    padding: 0.2vh 1.2vh;
+    border-radius: 50%;
+}
+
+#folder:hover{
+    background-color: #ffffff;
+}
+
+#folder img{
+    width: 100%;
+}
+
+#closest{
+    /* background-color: #ffffff; */
+    border: 1px solid rgb(189, 189, 189);
+	/* box-shadow: 1px 1px 5px 2px rgb(130, 130, 130); */
+    color: rgb(230, 230, 230);
+    
+    width: 5vh;
+    height: 5vh;
+    font-weight: bold;
+
+    padding: 0.2vh 1.2vh;
+    border-radius: 50%;
+}
+
+#closest:hover{
+    background-color: #ffffff;
+}
+
+#closest img{
+    width: 100%;
+}
+
+#order{
+    margin-top: 3.2vh;
+    padding-left: 2.2vh;
+    padding-right: 1.2vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+}
+
+.order-text{
+    font-size: 1.5vh;
+    color: #757575;
+    /* text-align: center; */
+
+    margin-top: 5vh;
+}
+
+.order-subtext{
+    font-size: 1.5vh;
+    color: #757575;
+    /* text-align: center; */
+    margin-top: 5vh;
+}
+
+#numberBox{
+    background-color: #686868;
+    padding: 0.4vh 1.0vh;
+
+    border-radius: 50%;
+}
+.numberText{
+    color: white;
+    font-size: 2vh;
+}
+
+#boxBorder{
+    border-bottom: 1px solid rgb(204, 204, 204);
+    padding: 1.8vh 0;
+}
+
+.propText{
+    font-size: 2vh;
+    color: #494949;
+}
+
+.coordsText{
+    font-size: 1.5vh;
+    color: #8E8E8E;
+}
+
+.statusText{
+    font-size: 1.8vh;
+}
+
+.TextEnable{
+    color: rgba(82, 156, 236, 0.987);
+}
+
+.TextDisabled{
+    color: rgba(236, 82, 82, 0.987);
+}
+
+.body::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+.body::-webkit-scrollbar {
+    width: 0.3vh;
+    background: rgba(80, 80, 80, 0.8);
+}
+.body::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90, 0.8);
+    border-radius: 20px;
+}
+
+.list-item{
+    transition: all 1s;
+
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.list-item:hover{
+    background-color: #e8e8e8;
+}
+
+.form{
+    background-color: rgb(237, 236, 236);
+    border-radius: 10px;
+}
+.form p{
+    font-size: 1.8vh;
+    color: gray;
+}
+.form input{
+    font-size: 2vh;
+    padding: 1vh;
+
+    background-color: rgba(0, 0, 0, 0.0);
+    color: gray;
+}
+
+.form input::placeholder{
+    font-size: 1.8vh;
+}
+
+/* this the buttons in create prop */
+#buttons-create div p{
+    color: gray;
+    padding: 1vh 2vh;
+    font-size: 1.8vh;
+    min-width: 10vh;
+    text-align: center;
+}
+
+#buttons-create div p:hover{
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+.scroller::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+.scroller::-webkit-scrollbar {
+    width: 0.3vh;
+    background: rgba(80, 80, 80, 0.8);
+}
+.scroller::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90, 0.8);
+    border-radius: 20px;
+}
+
+.options-update{
+    border-bottom: 1px solid gray;
+}
+
+.options-update:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+.options-update p{
+    color: gray;
+}
+
+#key{
+    background-color: rgba(0, 0, 0, 0.886);
+    color: whitesmoke;
+
+    width: 15vh;
+    font-size: 2vh;
+    text-align: center;
+    padding: 1vh;
+
+    border-radius: 0 10px 10px 0;
+
+    position: absolute;
+    top: 60%;
+    left: 0;
+    transform: translateY(-60%);
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 10vh;
+    height: 10vh;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    margin-top: 5vh;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

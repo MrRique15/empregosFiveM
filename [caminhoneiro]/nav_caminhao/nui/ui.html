@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<link href="ui.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<div id="actionmenu">
+			<div id="mainmenu">
+				<button class="menuoption" data-sub="gasolina">Gasolina</button>
+				<button class="menuoption" data-sub="diesel">Diesel</button>
+				<button class="menuoption" data-sub="show">Show</button>
+				<button class="menuoption" data-sub="madeira">Madeira</button>
+				<button class="menuoption" data-sub="carros">Carros</button>
+				<button class="menuoption" data-action="fechar">Fechar</button>
+			</div>
+
+			<div data-parent="mainmenu" id="gasolina" style="display: none;">
+				<button class="menuoption" data-action="gasolina-01">Localidade 01</button>
+				<button class="menuoption" data-action="gasolina-02">Localidade 02</button>
+			</div>
+
+			<div data-parent="mainmenu" id="diesel" style="display: none;">
+				<button class="menuoption" data-action="diesel-01">Localidade 01</button>
+				<button class="menuoption" data-action="diesel-02">Localidade 02</button>
+			</div>
+
+			<div data-parent="mainmenu" id="show" style="display: none;">
+				<button class="menuoption" data-action="show-01">Localidade 01</button>
+				<button class="menuoption" data-action="show-02">Localidade 02</button>
+			</div>
+
+			<div data-parent="mainmenu" id="madeira" style="display: none;">
+				<button class="menuoption" data-action="madeira-01">Localidade 01</button>
+				<button class="menuoption" data-action="madeira-02">Localidade 02</button>
+			</div>
+
+			<div data-parent="mainmenu" id="carros" style="display: none;">
+				<button class="menuoption" data-action="carros-01">Localidade 01</button>
+				<button class="menuoption" data-action="carros-02">Localidade 02</button>
+			</div>
+		</div>
+		<script src="ui.js" type="text/javascript"></script>
+	</body>
+</html>
